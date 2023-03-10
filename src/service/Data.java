@@ -1,4 +1,4 @@
-package com.weiliang.team.service;
+package service;
 
     public class Data {
         public static final int EMPLOYEE = 10;
