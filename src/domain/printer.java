@@ -27,6 +27,6 @@ public class printer implements Equipment{
 
     @Override
     public String getDescription() {
-        return getName() + "(" + getDescription() + ")";
+        return getName() + "(" + getType() + ")";
     }
 }

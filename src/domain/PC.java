@@ -12,7 +12,7 @@ public class PC implements Equipment{
 
     @Override
     public String getDescription() {
-        return getModel() + "(" + getDisplay() + "";
+        return getModel() + "(" + getDisplay() + ")";
     }
 
     public String getModel() {

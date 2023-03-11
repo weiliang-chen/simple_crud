@@ -3,7 +3,6 @@ package service;
 /**
  * @Description display the status of employee
  * @author Weiliang Chen
- *
  */
 public class Status {
     private final String NAME;
@@ -16,5 +15,12 @@ public class Status {
     public static final Status BUSY = new Status("BUSY");
     public static final Status VACATION = new Status("VACATION");
 
+    public String getNAME() {
+        return NAME;
+    }
 
+    @Override
+    public String toString() {
+        return getNAME();
+    }
 }

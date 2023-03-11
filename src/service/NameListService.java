@@ -19,7 +19,7 @@ public class NameListService {
             int id = Integer.parseInt(EMPLOYEES[i][1]);
             String name = EMPLOYEES[i][2];
             int age = Integer.parseInt(EMPLOYEES[i][3]);
-            double salary = Double.parseDouble(EMPLOYEES[i][1]);
+            double salary = Double.parseDouble(EMPLOYEES[i][4]);
             Equipment equipment;
             double bonus;
             int stock;
@@ -52,8 +52,14 @@ public class NameListService {
         return  employees;
     }
 
-    public Employee getEmployeeById(int id) {
-        return null;
+    public Employee getEmployeeById(int id) throws TeamException {
+        for (int i = 0; i < employees.length; i++) {
+            if (employees[i].getId() == id) {
+                return employees[i];
+            }
+        }
+
+        throw new TeamException("Can't find the specific employee");
     }
 
     /**
