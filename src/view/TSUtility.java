@@ -1,4 +1,4 @@
-package com.weiliang.team.view;
+package view;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class TSUtility {
             c = str.charAt(0);
             if (c != '1' && c != '2' &&
                     c != '3' && c != '4') {
-                System.out.print("选择错误，请重新输入：");
+                System.out.print("Invalid input, please try again: ");
             } else break;
         }
         return c;
@@ -30,7 +30,7 @@ public class TSUtility {
      * @date 2019年2月12日上午12:03:50
      */
     public static void readReturn() {
-        System.out.print("按回车键继续...");
+        System.out.print("Press Enter to continue...");
         readKeyBoard(100, true);
     }
     /**
@@ -48,7 +48,7 @@ public class TSUtility {
                 n = Integer.parseInt(str);
                 break;
             } catch (NumberFormatException e) {
-                System.out.print("数字输入错误，请重新输入：");
+                System.out.print("The number is invalid, please enter again: ");
             }
         }
         return n;
@@ -68,7 +68,7 @@ public class TSUtility {
             if (c == 'Y' || c == 'N') {
                 break;
             } else {
-                System.out.print("选择错误，请重新输入：");
+                System.out.print("Please enter a valid input: ");
             }
         }
         return c;
@@ -85,7 +85,7 @@ public class TSUtility {
             }
 
             if (line.length() < 1 || line.length() > limit) {
-                System.out.print("输入长度（不大于" + limit + "）错误，请重新输入：");
+                System.out.print("input length can't greater than (" + limit + ") Please enter again: ");
                 continue;
             }
             break;

@@ -20,4 +20,8 @@ public class Designer extends Programmer{
     public String toString() {
         return getDetails() + "\tdesigner\t" + getStatus() + "\t" + bonus + "\t\t\t" + getEquipment().getDescription();
     }
+
+    public String getDetailForTeam() {
+        return getTeamBaseDetails() + "\tDesigner\t" + getBonus();
+    }
 }

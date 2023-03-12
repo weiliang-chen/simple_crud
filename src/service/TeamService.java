@@ -96,7 +96,7 @@ public class TeamService {
 
         // the member id doesn't match any member
         if (i == total) {
-            throw new TeamException("Can't fine the specific member with member Id, deletion fails");
+            throw new TeamException("Can't fine the specific member with member id");
         }
 
         // replace member from i to total-1 with their next member to implement delete
